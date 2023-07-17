@@ -1,14 +1,13 @@
 html {
     background: radial-gradient(farthest-corner at right top, #968C83, #D6D2C4);
-    height: 100%;
-    width: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100vh;
     font-family: 'Roboto', cursive;
 }
 
 .conteudo {
     padding: 10vh 3em;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     gap: 2em;
 }
@@ -87,7 +86,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     Background: #C7B198;
     font-weight: 400;
@@ -102,7 +101,7 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 20px;
+    min-width: 20px;
     height: 20px;
     border: 2px solid #968C83;
     border-radius: 5px;
@@ -117,12 +116,13 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 980px) {
     .conteudo {
+        padding: 1vh 3em;
         flex-direction: column;
         align-items: center;
     }
 
     .principal {
-        padding: 2em 2em 1em 0;
+        padding: 1em 2em 1em 0;
     }
 
     .item {
