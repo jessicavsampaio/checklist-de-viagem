@@ -1,0 +1,133 @@
+html {
+    background: radial-gradient(farthest-corner at right top, #968C83, #D6D2C4);
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', cursive;
+}
+
+.conteudo {
+    padding: 10vh 3em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2em;
+}
+
+.principal {
+    flex-grow: 1;
+    flex-basis: auto;
+    max-width: 600px;
+    padding: 2em 4em 2em 2em;
+    box-sizing: border-box;
+    display: flex;
+    background: #ebe1d5;
+    border-radius: 10px;
+    gap: 2em;
+    width: 100%;
+    min-width: 300px;
+}
+
+.adicionar {
+    width: 100%;
+}
+
+.adicionar #titulo {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+
+.adicionar input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0 1em;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    border: none;
+}
+
+.adicionar label {
+    display: block;
+}
+
+.cadastrar {
+    background-color: #596E79;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.cadastrar:hover {
+    background-color: #968C83;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+    width: 100%;
+    min-width: 300px;
+}
+
+.item {
+    list-style: none;
+    padding: 0.6em 2em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 1em;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.item strong {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    Background: #C7B198;
+    font-weight: 400;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #968C83;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-image: url("../images/checkbox.png");
+    background-size: contain;
+  }
+  
+
+@media screen and (max-width: 980px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal {
+        padding: 2em 2em 1em 0;
+    }
+
+    .item {
+        flex-grow: 1;
+        flex-basis: auto;
+        font-size: 17px;
+    }
+}
