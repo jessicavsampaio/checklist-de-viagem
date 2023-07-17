@@ -65,6 +65,7 @@ html {
     padding: 0;
     max-width: 600px;
     width: 100%;
+    min-width: 300px;
 }
 
 .item {
@@ -113,7 +114,6 @@ input[type="checkbox"] {
     background-size: contain;
   }
   
-
 @media screen and (max-width: 980px) {
     .conteudo {
         flex-direction: column;
@@ -127,7 +127,6 @@ input[type="checkbox"] {
     .item {
         flex-grow: 1;
         flex-basis: auto;
-        min-width: 300px;
         font-size: 17px;
     }
 }
